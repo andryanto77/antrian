@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    table(class="table table-striped")
+    thead
+      tr
+        th Nomor
+        th Jenis Transaksi
+        th Status
+        th Timer
+        th Action
+    br
+    tbody
+      tr
+        td #{id}
+        td #{jenis}
+        td #{status}
+        td
+        h5(id="timer")
+        td 
